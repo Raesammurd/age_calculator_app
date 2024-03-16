@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;600;700&family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,400;0,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+:root{
+  --purple:hsl(259, 100%, 65%);
+  --lightRed: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --OffWhite: hsl(0, 0%, 94%);
+  --LightGrey: hsl(0, 0%, 86%);
+  --SmokeyGrey: hsl(0, 1%, 44%);
+  --OffBlack: hsl(0, 0%, 8%);
+}
+
+body{
+  background-color: var(--LightGrey);
+  padding: 15rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+section{
+  background-color: var(--White);
+  /* width: 100%; */
+  height: 35rem;
+  width: 35rem;
+  border-radius: 1rem 1rem 10rem 1rem;
+}
+.container{
+  display: flex;
+  width: 70%;
+}
+.container > .div1{
+  display: flex;
+  padding: 1.4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: var(--LightGrey);
+}
+form{
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+}
+
+::placeholder {
+  color: #999; /* Light gray */
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+input{
+  width: 80%;
+  height: 2rem;
+  font-size: 8px;
+  border-color: var(--OffBlack);
+  border-width: .4px;
+  margin-left: 3rem auto;
+}
+
+label {
+  font-weight: bold;
+ font-size: 16px;
+  color: var(--SmokeyGrey);
+}
+
+label>p {
+  font-weight: bold;
+}
+
+.mid{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.mid > div{
+width: 100%;
+height: .1rem;
+background-color: var(--SmokeyGrey);
+/* width: 45rem; */
+margin-left: 2rem;
+}
+.mid > img{
+  width: 30%;
+}
+.bottom > p{
+  font-weight: 800;
+  font-size: 55px;
+  text-align: start;
+  margin-left: 4rem;
+  margin-top: .6rem;
+}
+.bottom > p > span{
+color: var(--purple);
+padding-right: 2rem;
+}
+button{
+background-color: var(--purple);
+border-radius: 50%;
+border: none;
+}
+form > div >label{
+  display: block;
+}
+
+.day-err, .month-err, .year-err{
+font-size: 10px;
+color: var(--lightRed);
+margin-top: 0.5rem;
+}
+
+@media (min-width:481px) and (max-width: 600px){
+
+}
+@media (max-width: 480px) {
+body{
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ width: 70%;
+ height: 80%;
+}
+  section{
+  text-align: center;
+  justify-content: center;
+  width: 18rem;
+  height: 30rem;
+}
+.container>.div1>.form1{
+text-align: center;
+justify-items: center;
+margin-left: 6rem;
+}
+.bottom{
+  margin-top: 4rem;
+}
+.bottom > p{
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.mid {
+  position: relative;
+}
+
+.mid > button {
+  top: 50%;
+  left: 55%;
+  position: absolute;
+  transform: translate(-50%,-60%);
+}
+
+}
